@@ -21,8 +21,8 @@ var dataCollection=null;
     const fs=require('fs')
    
 //reading student and course file
-    var students = () => JSON.parse(fs.readFileSync("student.json", "UTF8"));
-    var courses = () => JSON.parse(fs.readFileSync("student.json", "UTF8"));
+    var students = () => JSON.parse(fs.readFileSync("Data/students.jason", "UTF8"));
+    var courses = () => JSON.parse(fs.readFileSync("Data/students.jason", "UTF8"));
     dataCollection=new Data(students(),courses())
     resolve;
 })
