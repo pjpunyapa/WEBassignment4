@@ -19,6 +19,8 @@ var app = express();
 const cd = require('./modules/collegedata.js');
 // set up the link to college data.js
 
+app.use(express.static('public'))
+
 
 // setup a 'route' to listen on the default url path
 app.get("/", (req, res) => {
